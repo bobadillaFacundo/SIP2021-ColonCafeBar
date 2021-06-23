@@ -3,7 +3,7 @@ const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
 	class Category extends Model {
 	}
-	Delivery.init(
+	Category.init(
 		{
 			name: {
 				type: DataTypes.STRING,
@@ -23,5 +23,5 @@ module.exports = (sequelize, DataTypes) => {
 		}
 	);
 
-	return Delivery;
+	return Category;
 }
