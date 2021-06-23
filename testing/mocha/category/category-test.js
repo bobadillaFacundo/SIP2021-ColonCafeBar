@@ -23,7 +23,7 @@ describe('Category-Test', () => {
 		category = createdCategory;
 	});
 
-	it('Update a category isActive', async () => 
+	it('Update a category name', async () => 
 	{
 		await server.utils.category.updateCategory({  categoryId: category.id, name: "cervezaArtesanal"});
 		const updatedCategory = await server.utils.category.getCategory(category.id);
@@ -31,7 +31,7 @@ describe('Category-Test', () => {
 		category = updatedCategory;
 	});
 
-	it('Delete the category logicamnete', async () => 
+	it('Delete the category logicamnete, isActive=false', async () => 
 	{
 		let result = await server.utils.category.deleteCategory(category.id);
 		assert.equal(Boolean(result), true);
