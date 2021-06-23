@@ -1,7 +1,7 @@
 const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
-	class Delivery extends Model {
+	class Category extends Model {
 	}
 	Delivery.init(
 		{
