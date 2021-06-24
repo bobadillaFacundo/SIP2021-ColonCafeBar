@@ -1,8 +1,8 @@
 const assert = require('chai').assert;
-const config = require('../../../backend/knexfile');
+const config = require('../../backend/knexfile');
 const knex = require('knex')(config);
 
-const Server = require('../../../backend/src/Server');
+const Server = require('../../backend/src/Server');
 const server = new Server();
 
 let category = null;
